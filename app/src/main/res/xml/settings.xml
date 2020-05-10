@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <DropDownPreference
+        android:defaultValue="EUR"
+        android:entries="@array/currency_types_arr"
+        android:entryValues="@array/currency_types_arr"
+        android:key="base_currency"
+        android:title="@string/currency"
+        app:useSimpleSummaryProvider="true" />
+
+
+    <DropDownPreference
+        android:defaultValue="3"
+        android:entries="@array/refresh_time_arr"
+        android:entryValues="@array/refresh_time_arr"
+        android:key="refresh_time"
+        android:title="@string/refresh_time"
+        app:useSimpleSummaryProvider="true" />
+
+</PreferenceScreen>

@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity(), IMainActivity {
             setOf(
                 R.id.nav_splash_screen,
                 R.id.nav_login,
-                R.id.nav_help,
+                R.id.nav_contact,
                 R.id.nav_home,
                 R.id.nav_history,
                 R.id.nav_settings,

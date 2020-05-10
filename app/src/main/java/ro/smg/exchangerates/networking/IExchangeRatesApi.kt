@@ -1,19 +1,29 @@
 package ro.smg.exchangerates.networking
 
-// TODO: SMG
-//    https://api.exchangeratesapi.io/latest?base=EUR
-//    https://api.exchangeratesapi.io/history?start_at=2018-01-01&end_at=2018-01-02&symbols=RON,USD,BGN
+import io.reactivex.Single
+import retrofit2.http.GET
+import retrofit2.http.Query
+import ro.smg.exchangerates.model.data.Rate
+
 
 interface IExchangeRatesApi {
 
     /**
      * Obtain all exchange rates
      */
-    fun getAllExchanges()
+    @GET("latest")
+    fun getAllExchanges(@Query("base") base: String): Single<Rate>
+
 
     /**
      * Obtain exchange rates for the latest 10 days
      */
-    fun getExchangesByDate()
+    @GET("history")
+    fun getExchangesByDate(
+        @Query("start_at") startDate: String,
+        @Query("end_at") endDate: String,
+        @Query("symbols") symbols: List<String> // RON,USD,BGN
+    ): Single<Any>
+
 
 }

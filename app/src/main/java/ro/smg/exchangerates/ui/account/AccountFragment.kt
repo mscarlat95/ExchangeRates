@@ -13,7 +13,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import kotlinx.android.synthetic.main.account_fragment.*
 import ro.smg.exchangerates.R
 import ro.smg.exchangerates.databinding.AccountFragmentBinding
-import ro.smg.exchangerates.model.ApplicationState
+import ro.smg.exchangerates.model.app.ApplicationState
 import ro.smg.exchangerates.ui.BaseFragment
 import ro.smg.exchangerates.ui.MainActivity
 import ro.smg.exchangerates.ui.iViews.IAccountScreen

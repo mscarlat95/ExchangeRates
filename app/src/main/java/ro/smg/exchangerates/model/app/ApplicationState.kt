@@ -1,4 +1,4 @@
-package ro.smg.exchangerates.model
+package ro.smg.exchangerates.model.app
 
 /**
  *  Possible state of the application

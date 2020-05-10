@@ -17,5 +17,53 @@
     <string name="email">Email</string>
     <string name="sign_out">Sign Out</string>
     <string name="contact">Contact</string>
+    <string name="currency">Currency</string>
+    <string name="refresh_time">Refresh Time</string>
+    <string name="last_update">Last Update</string>
+    <string name="error_account_not_available">No account available.</string>
+    <string name="error_generic_title">Something went wrong</string>
+
+    <array name="currency_types_arr">
+        <item>EUR</item>
+        <item>USD</item>
+        <item>JPY</item>
+        <item>BGN</item>
+        <item>CZK</item>
+        <item>DKK</item>
+        <item>GBP</item>
+        <item>HUF</item>
+        <item>PLN</item>
+        <item>RON</item>
+        <item>SEK</item>
+        <item>CHF</item>
+        <item>ISK</item>
+        <item>NOK</item>
+        <item>HRK</item>
+        <item>RUB</item>
+        <item>TRY</item>
+        <item>AUD</item>
+        <item>BRL</item>
+        <item>CAD</item>
+        <item>CNY</item>
+        <item>HKD</item>
+        <item>IDR</item>
+        <item>ILS</item>
+        <item>INR</item>
+        <item>KRW</item>
+        <item>MXN</item>
+        <item>MYR</item>
+        <item>NZD</item>
+        <item>PHP</item>
+        <item>SGD</item>
+        <item>THB</item>
+        <item>ZAR</item>
+    </array>
+
+    <array name="refresh_time_arr">
+        <item>"3"</item>
+        <item>"5"</item>
+        <item>"15"</item>
+    </array>
+
 
 </resources>

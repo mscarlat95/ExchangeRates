@@ -71,4 +71,9 @@
             app:popUpTo="@id/nav_account"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="ro.smg.exchangerates.ui.about.ContactFragment"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contact" />
 </navigation>

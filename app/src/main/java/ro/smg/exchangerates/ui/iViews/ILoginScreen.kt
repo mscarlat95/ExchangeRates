@@ -1,7 +1,7 @@
 package ro.smg.exchangerates.ui.iViews
 
 import android.content.Intent
-import ro.smg.exchangerates.model.ApplicationState
+import ro.smg.exchangerates.model.app.ApplicationState
 
 interface ILoginScreen {
     /**

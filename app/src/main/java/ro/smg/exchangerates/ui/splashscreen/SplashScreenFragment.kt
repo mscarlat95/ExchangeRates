@@ -1,6 +1,7 @@
 package ro.smg.exchangerates.ui.splashscreen
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,10 +9,11 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import ro.smg.exchangerates.R
-import ro.smg.exchangerates.model.ApplicationState
+import ro.smg.exchangerates.model.app.ApplicationState
 import ro.smg.exchangerates.ui.BaseFragment
 import ro.smg.exchangerates.ui.MainActivity
 import ro.smg.exchangerates.ui.iViews.ISplashScreen
+import ro.smg.exchangerates.util.SPLASH_SCREEN_DURATION_MS
 
 /**
  * Splash Screen
@@ -34,6 +36,7 @@ class SplashScreenFragment : BaseFragment(), ISplashScreen {
 
         // Views
         (activity as MainActivity).displayToolbar(false)
+        Handler().postDelayed({ viewModel.launchApp() }, SPLASH_SCREEN_DURATION_MS)
     }
 
     private fun observeViewModel() {
@@ -56,5 +59,4 @@ class SplashScreenFragment : BaseFragment(), ISplashScreen {
             )
         }
     }
-
 }

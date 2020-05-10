@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_login.*
 import ro.smg.exchangerates.R
-import ro.smg.exchangerates.model.ApplicationState
+import ro.smg.exchangerates.model.app.ApplicationState
 import ro.smg.exchangerates.ui.BaseFragment
 import ro.smg.exchangerates.ui.MainActivity
 import ro.smg.exchangerates.ui.iViews.ILoginScreen

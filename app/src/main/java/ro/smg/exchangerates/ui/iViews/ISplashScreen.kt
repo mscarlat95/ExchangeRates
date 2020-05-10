@@ -1,6 +1,6 @@
 package ro.smg.exchangerates.ui.iViews
 
-import ro.smg.exchangerates.model.ApplicationState
+import ro.smg.exchangerates.model.app.ApplicationState
 
 interface ISplashScreen {
     /**
