@@ -23,3 +23,6 @@ const val DEFAULT_CURRENCY: String = "EUR"
 // App Config
 const val SPLASH_SCREEN_DURATION_MS: Long = 2000L
 const val CONTACT_URL: String = "https://exchangeratesapi.io/"
+const val CHART_AVAILABLE_SYMBOLS: String = "RON,USD,BGN"
+const val CHART_MAX_DAYS: Int = 10
+const val CHART_ANIMATION_DURATION_MS: Int = 2000

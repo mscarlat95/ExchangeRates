@@ -3,6 +3,7 @@ package ro.smg.exchangerates.networking
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Query
+import ro.smg.exchangerates.model.data.RangedRates
 import ro.smg.exchangerates.model.data.Rate
 
 
@@ -22,8 +23,7 @@ interface IExchangeRatesApi {
     fun getExchangesByDate(
         @Query("start_at") startDate: String,
         @Query("end_at") endDate: String,
-        @Query("symbols") symbols: List<String> // RON,USD,BGN
-    ): Single<Any>
-
+        @Query("symbols") symbols: String
+    ): Single<RangedRates>
 
 }

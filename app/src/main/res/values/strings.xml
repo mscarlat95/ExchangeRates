@@ -18,10 +18,11 @@
     <string name="sign_out">Sign Out</string>
     <string name="contact">Contact</string>
     <string name="currency">Currency</string>
-    <string name="refresh_time">Refresh Time</string>
+    <string name="refresh_time">Refresh Time (sec)</string>
     <string name="last_update">Last Update</string>
     <string name="error_account_not_available">No account available.</string>
     <string name="error_generic_title">Something went wrong</string>
+    <string name="chart_description">Last 10 days - Exchange Rates</string>
 
     <array name="currency_types_arr">
         <item>EUR</item>

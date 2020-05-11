@@ -1,11 +1,8 @@
 package ro.smg.exchangerates.ui.home
 
 import android.app.Application
-import android.os.Build
-import androidx.annotation.RequiresApi
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver
@@ -17,7 +14,7 @@ import ro.smg.exchangerates.ui.BaseViewModel
 import ro.smg.exchangerates.util.Log
 import ro.smg.exchangerates.util.SharedPreferencesHelper
 import ro.smg.exchangerates.util.TAG_HOME
-import ro.smg.exchangerates.util.getCurrentDate
+import ro.smg.exchangerates.util.getDateTime
 import java.lang.Exception
 
 class HomeViewModel(app: Application) : BaseViewModel(app) {
@@ -51,7 +48,7 @@ class HomeViewModel(app: Application) : BaseViewModel(app) {
 
                         // Update UI
                         _exchangesList.postValue(retrieveList(t.rates))
-                        _lastUpdate.postValue(getCurrentDate())
+                        _lastUpdate.postValue(getDateTime())
                     }
 
                     override fun onError(e: Throwable) {
